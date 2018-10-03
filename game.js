@@ -4,6 +4,7 @@ function slap() {
   health -= 1
   //alert(health);
   console.log(health)
+  update()
 }
 
 function update() {
