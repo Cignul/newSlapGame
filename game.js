@@ -29,5 +29,6 @@ function kick() {
 function update() {
   document.getElementById("health").innerHTML = `${health}`;
   document.getElementById("hits").innerHTML = `${hits}`;
+  document.getElementById("enemy").innerHTML = `${enemyName}`;
 }
 update()
