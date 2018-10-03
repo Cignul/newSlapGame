@@ -7,7 +7,7 @@ function slap() {
 }
 
 function update() {
-
+  document.getElementById("health").innerHTML = `${health}`;
 }
-
+update()
 slap()
