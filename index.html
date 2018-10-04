@@ -11,28 +11,44 @@
   <link rel="stylesheet" href="game.css">
 
 </head>
+
 <header>
-  <span>Enemy:<span id="enemy">${enemyName}</span></span>
-  <span>Health:<span id="health">${health}</span></span>
-  <span>Hits:<span id="hits">${hits}</span></span>
-
-
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <span class="font-weight-bold">Enemy:<span id="enemy">${enemyName}</span></span>
+      <span class="font-weight-bold">Health:<span id="health">${health}</span></span>
+      <span class="font-weight-bold">Hits:<span id="hits">${hits}</span></span>
+    </div>
+  </div>
 </header>
 
+
 <body>
-  <img src="Shun-Di-Virtua-Fighter.jpg" alt="Target" class="target">
+  <div class="row bg">
+    <div class="col-sm-12 image-center">
+      <img src="Shun-Di-Virtua-Fighter.jpg" alt="Target" class="target rounded mx-auto d-block">
 
 
 
 
-
+    </div>
+  </div>
   <script src="game.js"></script>
 </body>
 
 <footer>
-  <button type="button" class="btn btn-primary" onclick="slap()">Slap</button>
-  <button type="button" class="btn btn-primary" onclick="punch()">Punch</button>
-  <button type="button" class="btn btn-primary" onclick="kick()">Kick</button>
+  <div class="row container-fluid">
+    <div class="col-sm-4">
+      <button type="button" class="btn btn-primary btn-lg justify-center" onclick="slap()">Slap</button>
+    </div>
+    <div class="col-sm-4">
+      <button type="button" class="btn btn-primary btn-lg " onclick="punch()">Punch</button>
+    </div>
+    <div class="col-sm-4">
+      <button type="button" class="btn btn-primary btn-lg " onclick="kick()">Kick</button>
+    </div>
+
+  </div>
 </footer>
 
 </html>

@@ -4,25 +4,37 @@ let enemyName = "Shun Di";
 
 
 function slap() {
-  health -= 1
-  //alert(health);
-  console.log(health)
-  hits += 1
-  update()
+  if (health >= 1) {
+    health -= 1
+    //alert(health);
+    console.log(health)
+    hits += 1
+    update()
+  } else {
+    alert("your opponent is KO'd!")
+  }
 }
 function punch() {
-  health -= 5
-  //alert(health);
-  console.log(health)
-  hits += 1
-  update()
+  if (health >= 1) {
+    health -= 5
+    //alert(health);
+    console.log(health)
+    hits += 1
+    update()
+  } else {
+    alert("your opponent is KO'd!")
+  }
 }
 function kick() {
-  health -= 10
-  //alert(health);
-  console.log(health)
-  hits += 1
-  update()
+  if (health >= 1) {
+    health -= 10
+    //alert(health);
+    console.log(health)
+    hits += 1
+    update()
+  } else {
+    alert("your opponent is KO'd!")
+  }
 }
 
 
